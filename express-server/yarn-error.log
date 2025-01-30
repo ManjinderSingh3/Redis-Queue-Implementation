@@ -1,0 +1,41 @@
+Arguments: 
+  /Users/manjinder/.nvm/versions/node/v22.12.0/bin/node /usr/local/bin/yarn add express @types/expres redis
+
+PATH: 
+  /Users/manjinder/.nvm/versions/node/v22.12.0/bin:/anaconda3/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Postgres.app/Contents/Versions/latest/bin:/Users/manjinder/.nvm/versions/node/v22.12.0/bin:/Users/manjinder/opt/anaconda3/bin:/Users/manjinder/opt/anaconda3/condabin:/anaconda3/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/mysql-8.0.28-macos11-arm64/bin:/usr/local/mysql-8.0.28-macos11-arm64/bin
+
+Yarn version: 
+  1.22.18
+
+Node version: 
+  22.12.0
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@types%2fexpres: Not found
+      at params.callback [as _callback] (/usr/local/lib/node_modules/yarn/lib/cli.js:66138:18)
+      at self.callback (/usr/local/lib/node_modules/yarn/lib/cli.js:140883:22)
+      at Request.emit (node:events:524:28)
+      at Request.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:141855:10)
+      at Request.emit (node:events:524:28)
+      at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:141777:12)
+      at Object.onceWrapper (node:events:638:28)
+      at IncomingMessage.emit (node:events:536:35)
+      at endReadableNT (node:internal/streams/readable:1698:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+
+npm manifest: 
+  {
+    "name": "express-server",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

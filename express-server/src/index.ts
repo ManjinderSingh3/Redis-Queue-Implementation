@@ -47,6 +47,6 @@ app.post("/submit", async (req, res) => {
     // Note: First arguement inside LPush method (problems) is the name of Queue. Also, Redis does not support objects. So, we have Stringify the inputs before pushing them to queue.
     res.status(200).send("Submission received and saved to Queue");
   } catch (error) {
-    res.status(500).send("Failed to store response in Queue");
+    res.status(500).json({ "Failed to store response in Queue": error });
   }
 });

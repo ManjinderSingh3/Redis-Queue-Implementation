@@ -27,6 +27,7 @@ const startWorker = async () => {
         // Step 2 : Perform some operation on the submission/Evaluate Leetcode Submission
         //@ts-ignore
         await processSubmission(pickedSubmission.element);
+        // Step 3: TODO - After processing is done send to PUB-SUB
       } catch (error) {
         console.error("Error while processing submission", error);
       }

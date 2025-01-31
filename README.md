@@ -42,9 +42,15 @@
 - Check the logs and you will see the backend server is running on port 3000.
 
 ## Steps to Populate to Redis Queue
+
 - Open POSTMAN and hit http://localhost:3000/submit as a POST call. (An example of request body is attached as a comment along with /submit endpoint)
 - It will PUBLISH to the queue.
 - Double check if something is there in the queue by performing `RPOP problems`command on **Redis-CLI**. If there would be something in queue it will get popped out.
 
 ## Workers Picking up from the Queue
-### How to replicate submitting multiple requests to queue and Workers picking them from queue
+
+- We will simulate the real word scenario of running multiple workers by running Workers code 4 times in 4 separte terminal windows using this command : `node dist/index.ts`
+
+- From POSTMAN client submit multiple dummy requests.
+
+- Above initiated 4 Workers will POP from queue randomly to simulate real world scenario.
